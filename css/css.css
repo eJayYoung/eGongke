@@ -1,0 +1,94 @@
+/*
+* @Description:易工客;
+* @Author:eJay;
+* @Update:20160416;
+*/
+/* Reset & Global */
+*{margin:0;padding:0;list-style: none;font-family: "Microsoft yahei";}
+html,body{height:100%;padding:0;}
+a{text-decoration: none;cursor: pointer;}
+.clear{clear: both;}
+.wrap{width:1172px;margin:0 auto;text-align: center;}
+/* header start */
+.header_bj{width:100%;height:894px;background:url(../img/headerbj.jpg) no-repeat center center;}
+.logo{width: 150px;height: 60px;float: left;margin-top:10px;background: url(../img/logo.png) no-repeat;display: block;}
+.nav{float: right;width:600px;height:40px;margin-top: 10px;}
+    .nav li{float: left;width:178px;height:40px;line-height: 40px;text-align: center;margin-right:22px;}
+    .nav li a{font-size:18px;color: #fff;
+    }
+    .nav li a>span{margin-right:15px;
+    }
+    .nav li a:hover{width:178px;height: 40px;background: rgba(255,255,255,.2);display: block;border-radius:20px;-webkit-transition:all 200ms ease-out;}
+    .current{width:178px;height: 40px;background: rgba(255,255,255,.2);display: block;border-radius:20px;}
+
+.header_content{height:340px; position:absolute;top: 281px; }
+    .header_text{width:582px;height: 340px;float: left;text-align: center;}
+    .header_text p{font-size: 36px;line-height: 65px;color:#fff;}
+    .header_text p>span{font-weight: bold;}
+    .header_text input[type="button"]{width: 200px;height: 60px;font-size: 22px;color: #fff;text-align: center;line-height: 60px;border-radius: 5px;}
+    .login{background:#0B74E2;border:none;margin-top: 82px;margin-right: 40px;}
+    .login:hover{background: rgba(255,255,255,0.2);-webkit-transition:all 400ms ease-out;}
+    .register{background-color:rgba(255,255,255,0);border:1px solid #fff;margin-top: 96px;}
+    .register:hover{background: rgba(11,116,226,0.5);-webkit-transition:all 400ms ease-out;border:none;}
+    .header_banner{height: 100%;float: right;text-align: center;}
+/* 产品介绍 */
+.product{width:100%;height:625px;background-color: #f2f6fa;color:#505a64;padding-top:50px;}
+    .product h2{font-size:40px;}
+    .product h3{font-size:18px;}
+    .product .span{width:55px;height:5px;background-color:#0b74e2;margin:45px auto;}
+    .product_recommend{height:368px;display: flex;flex-flow: row nowrap;justify-content: space-between;}
+        .product_libox{width:345px;height:369px;text-align: center;}
+        .product_whitebox{border:15px solid #f6f9fc;background-color:#fff; text-align: center;cursor: pointer;}
+        .product_logo{width:214px;height:230px;border-bottom: 2px solid #0b74e2;display:inline-block;text-align: center;vertical-align: middle;line-height: 230px;}
+        .product_logo img{vertical-align: middle;}
+        .product_whitebox p{margin:45px;font-size:20px;color:#0b74e2;}
+/* 团队介绍 */
+.teamintroduce{height:850px;background-color: #2b2e37;padding-top: 90px;}
+    .intrd_title{font-size: 40px;color: #e1eefc;margin-bottom: 55px;}
+    .intrd_content{font-size: 20px;color: #a3a6a9;line-height: 40px;}
+    .team_leader{width:893px;margin:0 auto;display: flex;flex-flow: row nowrap;justify-content: space-between;margin-top: 200px;}
+    .team_leader li{width:252px;height:320px;background-color:#ccc;border-radius: 10px;}
+    .team_leader li .imgborder{width:100px;height:100px;border-radius: 50%;border:5px solid rgba(255,255,255,.3);margin:-60px auto 0;overflow: hidden;}
+    .team_leader li .imgborder img{width:100px;height:100px;}
+    .team_leader li p:nth-child(4){margin:20px 20px;overflow: hidden;}
+/* 复用样式 */
+.title{font-size: 40px;color: #e1eefc;}
+.content{font-size: 20px;color: #a3a6a9;line-height: 40px;}
+.place,.leadername{line-height: 30px;font-weight: bold;}
+.enlarge{background-color:#fff !important;-webkit-transform:scale(1.2);}
+/* 向下箭头的杆儿 */
+    .arrowbody{ width: 5px;height:70px; background: #fff; margin:33px auto 0px;}
+
+/* 产品展示 */
+.productshow{height:861px; background:url(../img/part3bg.png) no-repeat center bottom; }
+.productshow .arrow{width:6px;height: 25px;background-color: #0f76e1;margin:0 auto;position: relative;}
+.productshow .arrow span{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #0066cc;position: absolute;top:25px;left:-7px;}
+.show{color:#000;margin-top: 34px;margin-bottom: 30px;}
+.productshow .product_banner{width:585px;height:358px;margin:40px auto 0px;background-color: #dceaf6;}
+.productshow .product_img li img{margin-top:20px;}
+.productshow .btn_list{width:50px;height:10px;margin:10px auto 0px;}
+.productshow .btn_list li{float:left;width:5px;height: 5px;border-radius: 50%;background-color: rgba(0,0,0,.2);margin-right: 10px;}
+.productshow .btn_list li.on{background-color:#1f7ed0;}
+
+.productshow .product_list{width:665px;height:156px;margin:0 auto;display: flex;flex-flow: row nowrap;justify-content: space-between;}
+.productshow .product_list li img{margin-top:48px;margin-bottom:30px;}
+.productshow .product_list li p{font-size: 20px;color: #fff;}
+/* 我们的角色 */
+.our_role{height:855px;background: url(../img/part4bg.png) no-repeat;opacity: 0.8;text-align: center;position: relative;}
+.our_role img{margin-top: 129px;}
+.our_role .advantage{width:260px;height: 156px;margin:0 auto;position: relative;border-radius: 15px;position: absolute;text-align: center;cursor: pointer;}
+.our_role .advantage span{width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;;position: absolute;top:156px;left:50%;margin-left: -30px;}
+.our_role .advantage p{font-size: 20px;line-height: 50px;color:#fff;margin-top: 20px;}
+    .box1{top:424px;left:240px;background-color: #307db5;}
+    .box1 span{border-top:20px solid #307db5;}
+    .box2{top:256px;left:595px;background-color: #1f7ed0;}
+    .box2 span{border-top:20px solid #1f7ed0;}
+    .box3{top:320px;right:370px;background-color: #50b6c7;}
+    .box3 span{border-top:20px solid #50b6c7;}
+
+/* footer */
+footer{background:url("../img/foot-img.jpg") no-repeat;height:183px;background-size:cover;background-position:center; text-align:center;padding-top:30px;letter-spacing: 1px;}
+footer h2{font-size:16px;color:#fff;margin:20px 0px;}
+footer h3{font-size:14px;color:#abd0f7;}
+
+
